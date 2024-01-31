@@ -11,10 +11,8 @@
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
-    "storybook": "start-storybook -p 9002 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook",
     "build": "BABEL_ENV=cjs babel src/ -d lib/ --copy-files",
-    "prepare": "yarn run build",
+    "prepare": "npm run build",
     "prettify": "prettier --write '{./,__{tests,mocks}__}/**/*.+(js|jsx)'"
   },
   "devDependencies": {
@@ -24,7 +22,6 @@
     "@babel/plugin-proposal-export-default-from": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/react": "^5.1.9",
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.6.1",
     "enzyme": "^3.8.0",
@@ -45,7 +42,6 @@
     "moment": "2.x",
     "prop-types": "^15.5.8",
     "raf": "^3.4.1",
-    "storybook": "^1.0.0",
     "styled-components": "^4.3.2"
   },
   "volta": {
